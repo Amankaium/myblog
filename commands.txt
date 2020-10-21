@@ -1,0 +1,26 @@
+call blogenv\Scripts\activate
+python -V
+pip -V
+pip freeze
+pip install django
+pip freeze
+pip install pillow
+django-admin startproject myblog
+cd myblog
+python manage.py runserver
+CTRL + C
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+git init
+git add .
+git commit -m "init"
+git branch -M main
+git remote add origin https://github.com/YOUR_LOGIN/myblog.git
+git push -u origin main
+python manage.py startapp main
+python manage.py migrate
+python manage.py createsuperuser
+git add .
+git commit -m "added main app"
+git push
+pip freeze > requirements.txt
