@@ -26,4 +26,6 @@ git push
 pip freeze > requirements.txt
 git add .
 git commit -m "added commands and requirements"
+git add .
+git commit -m "modified commands"
 git push
